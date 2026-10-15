@@ -8,3 +8,8 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Use the uploaded salon page as the baseline and isolate presentation updates to the requested section so unrelated sections remain unchanged.
+- Keep service IDs, images and categories in the shared salon catalog so filtering and booking always agree.
+- Keep the services presentation in a dedicated component with section-scoped design rules so catalog redesigns cannot change surrounding sections.
+- Store client photographs as real files in src/assets imported as modules, so they ship in any build (Vercel included).
