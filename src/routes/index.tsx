@@ -4,8 +4,8 @@ import { ArrowRight, MapPin, Clock, Instagram, ChevronDown, Menu, X, ExternalLin
 import { SALON, MARQUEE_ITEMS } from "@/lib/salon";
 import { BookingModal } from "@/components/BookingModal";
 import { ServicesSection } from "@/components/ServicesSection";
-import before from "@/assets/eo-antes-hd.jpg";
-import after from "@/assets/eo-depois-hd.jpg";
+import before from "@/assets/eo-antes-ig.jpg";
+import after from "@/assets/eo-depois-ig.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -145,9 +145,9 @@ function BeforeAfter() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
         <SectionTitle eyebrow="Antes e depois" title={<>Arraste e compare <em className="text-brand">a diferença.</em></>} sub="Do castanho ao platinado: deslize a barra e veja uma transformação real feita pela Eduarda." />
         <figure>
-          <div className="relative aspect-square w-full select-none overflow-hidden rounded-3xl shadow-soft">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md select-none overflow-hidden rounded-3xl shadow-soft">
             <img src={after} alt="Depois: cabelo platinado" className="absolute inset-0 h-full w-full object-cover" />
-            <img src={before} alt="Antes: cabelo com mechas amareladas" className="absolute inset-0 h-full w-full object-cover" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }} />
+            <img src={before} alt="Antes: cabelo castanho com mechas desbotadas" className="absolute inset-0 h-full w-full object-cover" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }} />
             <div className="pointer-events-none absolute inset-y-0 w-0.5 bg-card" style={{ left: `${pos}%` }}>
               <div className="absolute left-1/2 top-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-card text-primary shadow-soft">⇆</div>
             </div>
