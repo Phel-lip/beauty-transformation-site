@@ -155,7 +155,7 @@ function BeforeAfter() {
             <span className="absolute right-3 top-3 rounded-full bg-primary px-3 py-1 text-xs text-primary-foreground">Depois</span>
             <input type="range" min={0} max={100} value={pos} onChange={(e) => setPos(+e.target.value)} aria-label="Comparar antes e depois" className="absolute inset-0 h-full w-full cursor-ew-resize touch-pan-y opacity-0" />
           </div>
-          <figcaption className="mt-3 text-sm text-muted-foreground">Coloração platinada · trabalho publicado no Instagram da Eduarda.</figcaption>
+          <figcaption className="mt-3 text-sm text-muted-foreground">Um exemplo de transformação e o que as clientes falam depois — a prova que ajuda quem chega a decidir mais rápido.</figcaption>
         </figure>
       </div>
     </section>
@@ -175,21 +175,13 @@ function Faq() {
     <section id="faq" className="scroll-mt-20 bg-secondary/50 py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-5">
         <SectionTitle eyebrow="Dúvidas" title="Perguntas frequentes" />
-        <div className="space-y-6">
-          {["Sobre o atendimento", "Sobre a solicitação"].map((group, groupIndex) => (
-            <div key={group}>
-              <h3 className="mb-3 text-sm font-medium text-primary">{group}</h3>
-              <div className="divide-y rounded-3xl border bg-card">
-                {FAQ.slice(groupIndex * 2, groupIndex * 2 + 2).map(([q, a], index) => {
-                  const i = groupIndex * 2 + index;
-                  return <div key={q}>
-                    <button aria-expanded={open === i} aria-controls={`faq-answer-${i}`} onClick={() => setOpen(open === i ? null : i)} className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-medium">
-                      {q}<ChevronDown className={`h-5 w-5 shrink-0 text-primary transition ${open === i ? "rotate-180" : ""}`} />
-                    </button>
-                    {open === i && <p id={`faq-answer-${i}`} className="px-6 pb-5 text-sm text-muted-foreground">{a}</p>}
-                  </div>;
-                })}
-              </div>
+        <div className="divide-y rounded-3xl border bg-card">
+          {FAQ.map(([q, a], i) => (
+            <div key={q}>
+              <button aria-expanded={open === i} aria-controls={`faq-answer-${i}`} onClick={() => setOpen(open === i ? null : i)} className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-medium">
+                {q}<ChevronDown className={`h-5 w-5 shrink-0 text-primary transition ${open === i ? "rotate-180" : ""}`} />
+              </button>
+              {open === i && <p id={`faq-answer-${i}`} className="px-6 pb-5 text-sm text-muted-foreground">{a}</p>}
             </div>
           ))}
         </div>
