@@ -163,7 +163,7 @@ function BeforeAfter() {
 }
 
 const FAQ = [
-  ["Quais serviços a Eduarda realiza?", "Loiros (total blonde e soft blonde), coloração, ombré hair, morenas iluminadas, liso hair e mega hair. Em caso de dúvida, ela orienta qual técnica combina com o seu cabelo."],
+  ["Quais serviços a Eduarda realiza?", "Loiros e total blonde, coloração, ombré hair, morenas iluminadas, liso hair, mega hair, além de manicure & pedicure. Em caso de dúvida, ela orienta qual técnica combina com o seu cabelo."],
   ["Onde é o atendimento?", "Em Botucatu, SP. O endereço completo é informado pelo WhatsApp no momento de combinar o seu horário."],
   ["Como funciona a solicitação de horário?", "Você escolhe o serviço e, se quiser, uma data, um período e uma observação. No final, o WhatsApp da Eduarda abre com a mensagem pronta para você enviar."],
   ["O horário já fica confirmado?", "Ainda não. É uma solicitação: a Eduarda confere a agenda e confirma a disponibilidade e o valor com você pelo WhatsApp."],
