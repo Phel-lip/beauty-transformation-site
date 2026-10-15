@@ -34,11 +34,10 @@ export function ServicesSection({ onBook }: { onBook: (id: string) => void }) {
         <div className="services-grid">
           {services.map((service) => (
             <article key={service.id} className="service-card group">
-              <a href={service.source} target="_blank" rel="noopener noreferrer" className="service-photo-link" aria-label={`Ver ${service.title} no Instagram da Eduarda`}>
+              <div className="service-photo-link">
                 <img src={service.img} alt={service.alt ?? `${service.title} — trabalho de Eduarda Oliveira`} loading="lazy" decoding="async" data-category={service.category} className="service-photo" />
                 <span className="service-category">{service.category}</span>
-                <span className="service-photo-credit"><Instagram className="h-3.5 w-3.5" />{service.photoLabel ?? "Trabalho da Eduarda"}<ExternalLink className="ml-auto h-3 w-3" /></span>
-              </a>
+              </div>
               <div className="service-card-body">
                 <h3 className="font-display text-2xl leading-tight">{service.title}</h3>
                 <p className="service-description">{service.copy}</p>
