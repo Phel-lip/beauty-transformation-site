@@ -4,8 +4,8 @@ import { ArrowRight, MapPin, Clock, Instagram, ChevronDown, Menu, X, ExternalLin
 import { SALON, MARQUEE_ITEMS } from "@/lib/salon";
 import { BookingModal } from "@/components/BookingModal";
 import { ServicesSection } from "@/components/ServicesSection";
-import before from "@/assets/eo-antes.jpg";
-import after from "@/assets/eo-depois.jpg";
+import before from "@/assets/eo-antes-hd.jpg";
+import after from "@/assets/eo-depois-hd.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

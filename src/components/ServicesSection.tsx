@@ -16,7 +16,7 @@ export function ServicesSection({ onBook }: { onBook: (id: string) => void }) {
             <h2 className="font-display text-4xl leading-tight sm:text-5xl">Especialista em<br /><em className="text-brand">cuidar de você.</em></h2>
           </div>
           <div className="services-intro">
-            <p className="text-muted-foreground">Loiros, coloração, morenas, liso e mega hair: trabalhos reais da Eduarda, feitos com técnica e carinho em Botucatu.</p>
+            <p className="text-muted-foreground">Loiros, coloração, morenas, liso, mega hair e unhas: trabalhos reais da Eduarda, feitos com técnica e carinho em Botucatu.</p>
             <a href={SALON.instagram} target="_blank" rel="noopener noreferrer" className="services-profile"><Instagram className="h-4 w-4" />{SALON.instagramHandle}<ExternalLink className="h-3 w-3" /></a>
           </div>
         </div>
